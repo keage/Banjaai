@@ -1,0 +1,18 @@
+: cascade "include/layout.tx"
+
+: override content -> {
+
+<h1 style="padding: 70px; text-align: center; font-size: 80px; line-height: 1; letter-spacing: -2px;"><: $thread_name :></h1>
+
+<hr />
+<div class="thread">
+<ul>
+: for $thread -> $res {
+    <li>
+        <div><span><: $res.num :>: </span><span><: $res.name :></span><span> <: $res.mailto :> </span><span> <: $res.time :> </span><span> ID:<: $res.user_id :> </span></div>
+        <p class="text-aa"><: $res.html :></p>
+    </li>
+: }
+</ul>
+</div>
+: }

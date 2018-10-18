@@ -14,3 +14,31 @@ footer {
 /* smart phones */
 @media screen and (max-device-width: 480px) {
 }
+
+@font-face {
+    font-family: 'Stmr';
+    src: url('http://keage.tokyo/fonts/Saitamaar.eot');
+    src: local('Saitamaar'),
+    url('//keage.tokyo/fonts/Saitamaar.eot?#iefix') format('embedded-opentype'),
+    url('//keage.tokyo/fonts/Saitamaar.woff2') format('woff2'),
+    url('//keage.tokyo/fonts/Saitamaar.woff') format('woff'),
+    url('//keage.tokyo/fonts/Saitamaar.ttf') format('truetype');
+    font-weight: normal;
+}
+ul {
+    list-style: none;
+}
+.text-aa {
+    padding-top: 2px;
+    font-family: "ＭＳ Ｐゴシック", "MS PGothic", Stmr, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 18px;
+    word-break: break-all;
+    display: block;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    filter: brightness(99.9%);
+    -webkit-font-smoothing: antialiased;
+}
